@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#background {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+#desktop {
+    display: flex;
+    width: 100%;
+
+    height: 64px;
+    top: 0;
+    justify-content: space-between;
+    font-size: 32px;
+    color: black;
+
+}
+
+#desktop .logo {
+    display: flex;
+    line-height: 64px;
+    padding: 0 24px;
+
+}
+
+#desktop .logo span {
+    color: rgb(128, 128, 128, 0.5);
+    line-height: 64px;
+}
+
+#desktop .nav {
+    display: flex;
+    line-height: 64px;
+}
+
+#desktop .nav div {
+    padding: 0 8px;
+}
+
+main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 0;
+    font-size: 32px;
+    color: black;
+    flex-direction: column;
+}
+
+main .learn img {
+    width: 60%;
+    height: auto;
+    padding: 32px 24px;
+    opacity: 1;
+}
+
+main .learn {
+    width: 100%;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.2);
+
+}
+
+main .learn .text {
+    align-self: center;
+    padding: auto 0;
+}
+
+main .learn .text .button {
+    background-color: gray;
+    text-align: center;
+}
+
+main .learn .text .button h3 {
+    padding: 8px 0;
+}
+
+main .practicing {
+    display: flex;
+
+}
+
+main .practicing .left img {
+    width: 100%;
+    height: auto;
+
+}
+
+main .practicing .left {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+main .practicing .left h1 {
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+main .practicing .left span {
+    font-size: medium;
+}
+
+main .practicing .left p {
+    margin: 0;
+    overflow: auto;
+}
+
+main .practicing .right {
+    padding: 32px 0;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+
+
+main .practicing .right .orientation {
+    display: flex;
+
+}
+
+main .practicing .right #desktopimg {
+    width: 35%;
+    height: fit-content;
+    padding: 16px;
+}
+
+main .practicing .right .orientation div {
+    align-self: center;
+    justify-items: end;
+
+}
+
+#readmore {
+    color: dodgerblue;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+main .practicing .right .orientation div p,
+main .practicing .right .orientation div h2,
+main .practicing .right .orientation div span {
+    margin: 0;
+}
+
+main .practicing .right .orientation div p,
+main .practicing .right .orientation div h2 {
+    padding-bottom: 8px;
+}
+
+main .startlearn {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.2);
+
+}
+
+main .startlearn h1 {
+    text-align: center;
+    margin: 0;
+    padding: 32px;
+}
+
+main .startlearn .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 32px 72px;
+}
+
+main .startlearn .images .box {
+    margin: 32px;
+    background-color: white;
+    width: 29%;
+}
+
+main .startlearn .images .box img {
+    width: 100%;
+}
+
+main .startlearn .images .box .text {
+    padding: 16px 0 24px 16px;
+}
+
+main .startlearn .images .box .text span {
+    padding: 8px 0;
+    font-size: 1.7rem;
+}
+
+#exhibit {
+    text-align: center;
+    margin: 0;
+    padding-top: 32px;
+}
+
+main .practicing .left video {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+footer p {
+    color: rgba(128, 128, 128, 0.5);
+    padding: 16px 0;
+}
+
+@media only screen and (max-width:960px) {
+    #desktop {
+        display: none;
+
+    }
+
+    #desktopimg {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+        width: 100%;
+        height: 64px;
+        top: 0;
+        font-size: 32px;
+        color: red;
+        justify-content: space-around;
+    }
+
+    #mobile div {
+        height: 100%;
+    }
+
+    main .learn {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: rgba(128, 128, 128, 0.2);
+
+    }
+
+    main .learn img {
+        width: 100%;
+        height: auto;
+        padding: 0 0 32px 0;
+
+    }
+
+    main .learn .text {
+
+        padding-left: 16px;
+    }
+
+    main .learn .text .button {
+        background-color: gray;
+        text-align: center;
+        align-self: center;
+    }
+
+    main .practicing #mobiledelete {
+        display: none;
+    }
+
+    main .practicing .right {
+        padding: 32px 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    main .practicing .right .orientation {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+
+
+
+    }
+
+    main .practicing .right #mobileimg {
+
+        width: 100%;
+    }
+
+    main .practicing .right .orientation div {
+        align-self: flex-start;
+        justify-items: end;
+        padding: 0 0 32px 16px;
+
+    }
+
+    main .startlearn {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    main .startlearn h1 {
+        text-align: center;
+        margin: 0;
+        padding: 32px;
+    }
+
+    main .startlearn .images {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 16px 32px 16px;
+
+    }
+
+    main .startlearn .images .box {
+        margin: 0;
+        width: 100%;
+        padding: 8px 0;
+
+    }
+
+    main .startlearn .images .box img {
+        width: 100%;
+        display: none;
+    }
+
+    main .startlearn .images .box .text {
+        padding: 16px 0 24px 16px;
+        background-color: rgba(128, 128, 128, 0.2);
+
+    }
+
+    main .startlearn .images .box .text span,
+    main .startlearn .images .box .text p {
+        padding: 8px 0;
+        font-size: 1.7rem;
+        display: none;
+    }
+    main .practicing .left {
+        padding: 0;
+        width: 100%;
+    }
+    
+    main .practicing .left h1, main .practicing .left span, main .practicing .left p {
+        display: none;
+    }
+    main .practicing .left video{
+        padding-top:16px;
+        padding-bottom: 24px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:960px) {
+    #mobile, #mobileimg {
+        display: none;
+    }
+    
+}
